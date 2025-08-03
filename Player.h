@@ -5,7 +5,7 @@
 
 class Player{
 
-private:
+protected:
     std::string name;
     char move;
 
@@ -16,7 +16,6 @@ public:
     virtual std::string getName();
 
     virtual char makeMove() = 0;
-
 
 };
 

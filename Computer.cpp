@@ -1,8 +1,10 @@
 #include "Computer.h"
-#include <string>
 
-Computer::Computer(){
-    this->name = "Computer";
-    this->move = 'R';
+Computer::Computer() {
+    name = "Computer";
+    move = 'R';  // Default move
+}
 
+char Computer::makeMove() {
+    return move;
 }

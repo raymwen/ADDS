@@ -3,17 +3,10 @@
 
 #include "Player.h"
 
-class Human : private Player{
-
-    private:
-    std::string name;
-    char move;
-
-    public:
+class Human : public Player {
+public:
     Human(std::string n);
-
     char makeMove();
-
 };
 
 #endif
