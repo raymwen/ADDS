@@ -2,7 +2,7 @@
 #include <string>
 
 Computer::Computer(){
-    name = "Computer";
-    move = 'R';
+    this->name = "Computer";
+    this->move = 'R';
 
 }

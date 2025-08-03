@@ -15,7 +15,7 @@ public:
     //getters
     virtual std::string getName();
 
-    virtual char makeMove();
+    virtual char makeMove() = 0;
 
 
 };
