@@ -10,7 +10,7 @@ Player* Referee::refGame(Player * player1, Player * player2){
     }else if(p1.makeMove() == 'P'){
         return player1;
 
-    }else if(p1.makeMove() == 'S'){
+    }else{//} if(p1.makeMove() == 'S'){
         return player2;
     }
 }
