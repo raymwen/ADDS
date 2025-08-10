@@ -24,23 +24,23 @@ Move* Human::makeMove() {
     std::cin >> moveString;
     
     if(moveString == "Monkey"){
-        
+        move = new Monkey();
     }else if(moveString == "Ninja"){
-        
+        move = new Ninja();
     }else if(moveString == "Paper"){
-
+        move = new Paper();
     }else if(moveString == "Pirate"){
-
+        move = new Pirate();
     }else if(moveString == "Robot"){
-
+        move = new Robot();
     }else if(moveString == "Rock"){
-
+        move = new Rock();
     }else if(moveString == "Scissors"){
-        
+        move = new Scissors();
     }else if(moveString == "Zombie"){
-
+        move = new Zombie();
     }else{
         
     }
-    return new Rock();
+    return move;
 }
