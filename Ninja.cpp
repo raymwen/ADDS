@@ -3,5 +3,6 @@
 
 Ninja::Ninja(){
     name = "Ninja";
-    beats[2] = {"Zombie", "Pirate"};
+    beats[0] = "Zombie";
+    beats[1] = "Pirate";
 }

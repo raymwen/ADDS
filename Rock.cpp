@@ -3,5 +3,5 @@
 
 Rock::Rock(){
     name = "Rock";
-    beats[2] = {"Scissors"};
+    beats[0] = "Scissors";
 }

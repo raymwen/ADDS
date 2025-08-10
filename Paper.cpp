@@ -3,5 +3,5 @@
 
 Paper::Paper(){
     name = "Paper";
-    beats[2] = {"Rock"};
+    beats[0] = "Rock";
 }

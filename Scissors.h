@@ -4,9 +4,8 @@
 #include "Move.h"
 
 class Scissors : public Move {
-    private:
-    std::string name;
-    std::string beats[1];
+    public:
+    Scissors();
 };
 
 #endif

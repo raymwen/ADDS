@@ -1,10 +1,15 @@
 #include "Computer.h"
+#include "Rock.h"
 
 Computer::Computer() {
     name = "Computer";
-    move = 'R';  // Default move
+    move = new Rock();
 }
 
-char Computer::makeMove() {
+Move* Computer::makeMove() {
     return move;
+}
+
+Computer::~Computer(){
+    delete move;
 }

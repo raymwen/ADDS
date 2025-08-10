@@ -3,5 +3,6 @@
 
 Robot::Robot(){
     name = "Robot";
-    beats[2] = {"Zombie", "Ninja"};
+    beats[0] = "Zombie";
+    beats[1] = "Ninja";
 }

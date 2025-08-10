@@ -2,11 +2,12 @@
 #define HUMAN_H
 
 #include "Player.h"
+#include "Move.h"
 
 class Human : public Player {
 public:
     Human(std::string n = "Human");
-    char makeMove();
+    Move* makeMove();
 };
 
 #endif

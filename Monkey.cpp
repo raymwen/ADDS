@@ -3,5 +3,6 @@
 
 Monkey::Monkey(){
     name = "Monkey";
-    beats[2] = {"Robot", "Ninja"};
+    beats[0] = "Robot";
+    beats[1] = "Ninja";
 }

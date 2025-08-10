@@ -3,5 +3,5 @@
 
 Scissors::Scissors(){
     name = "Scissors";
-    beats[2] = {"Paper"};
+    beats[0] = "Paper";
 }

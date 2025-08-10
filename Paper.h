@@ -4,9 +4,8 @@
 #include "Move.h"
 
 class Paper : public Move {
-    private:
-    std::string name;
-    std::string beats[1];
+    public:
+    Paper();
 };
 
 #endif

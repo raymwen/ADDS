@@ -4,9 +4,8 @@
 #include "Move.h"
 
 class Ninja : public Move {
-    private:
-    std::string name;
-    std::string beats[2];
+    public:
+    Ninja();
 };
 
 #endif
