@@ -1,8 +1,10 @@
 #include <iostream>
 #include "Truckloads.h"
+#include "Reverser.h"
 
 int main(){
-    Truckloads T;
-    std::cout << T.numTrucks(1024, 5);
+    Reverser r;
+    std::string str = "hello world";
+    std::cout << r.reverseString(str);
     return 0;
 }
