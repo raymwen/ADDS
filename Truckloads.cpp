@@ -1,5 +1,6 @@
 #include "Truckloads.h"
 #include <iostream>
+#include <cmath>
 
 int Truckloads::numTrucks(int numCrates, int loadSize){
     if(numCrates <= loadSize){
