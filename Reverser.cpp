@@ -1,4 +1,5 @@
 #include "Reverser.h"
+#include <iostream>
 
 int Reverser::reverseDigit(int value){
     if(value < 0){
@@ -7,7 +8,7 @@ int Reverser::reverseDigit(int value){
     else if(value<10){
         return value;
     }else{
-        return (value % 10)*pow(10, floor(log10(value))) + reverseDigit((value-value%10)/10);
+        return (value % 10)*std::pow(10, std::floor(log10(value))) + reverseDigit((value-value%10)/10);
     }
 }
 
