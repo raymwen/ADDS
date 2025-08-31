@@ -1,10 +1,12 @@
-#include <iostream>
-#include "Truckloads.h"
-#include "Reverser.h"
+#include "Finder.cpp"
+using namespace std;
 
 int main(){
-    Reverser r;
-    std::string str = "hello world";
-    std::cout << r.reverseString(str);
+    Finder f;
+    vector<int> r = f.findSubstrings("mississipi", "sippiasnf");
+    for(int i=0;i<r.size();i++){
+        std::cout << r[i] << ", ";
+    }    
+    cout << endl;
     return 0;
 }
