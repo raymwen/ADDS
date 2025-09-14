@@ -31,17 +31,22 @@ LinkedList::~LinkedList() {
 
 void LinkedList::printList() {
 
-    Node* currNode = head;
+    if(head!=nullptr){
 
-    while (currNode != nullptr) {
+        std::cout << "[";
 
-        std::cout << currNode->data << std::endl;
+        Node* currNode = head;
 
-        currNode = currNode->link;
+        while (currNode != nullptr) {
 
+            std::cout << currNode->data << " ";
+
+            currNode = currNode->link;
+
+        }
+
+        std::cout << "]" << std::endl;
     }
-
-    std::cout << std::endl;
 
 }
 

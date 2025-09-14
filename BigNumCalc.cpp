@@ -8,7 +8,7 @@
     }
 
     BigNumCalc::~BigNumCalc(){
-        
+
     }
 
     std::list<int> BigNumCalc::buildBigNum(std::string numString){
@@ -29,7 +29,7 @@
 
         int carry = 0;
 
-        while(!num1.empty() && !num2.empty()){
+        while(!num1.empty() && !num2.empty() && carry >0){
 
             int subSum = num1.back() + num2.back() + carry;
 
