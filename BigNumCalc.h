@@ -5,11 +5,11 @@
 
 class BigNumCalc{
 
+    public:
+
     BigNumCalc();
 
     ~BigNumCalc();
-
-    public:
 
     std::list<int> buildBigNum(std::string numString);
 

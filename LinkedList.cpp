@@ -1,5 +1,6 @@
 #include "LinkedList.h"
 #include <iostream>
+#include <limits>
 
 LinkedList::LinkedList() {
     head = nullptr;
@@ -110,7 +111,7 @@ int LinkedList::get(int pos){
 
     if(traverse(pos)!=nullptr){
 
-    return traverse(pos)->data;
+        return traverse(pos)->data;
 
     }else{
         return std::numeric_limits < int >::max();
