@@ -8,6 +8,16 @@ LinkedList::LinkedList() {
 
 LinkedList::LinkedList(int* array, int len){
 
+    Node* next = nullptr;
+
+    for(int i=len-1;i>=0;i--){
+        Node* n = new Node(array[i], next);
+        next = n;
+        if(i == len-1){
+            head = n;
+        }
+    }
+
 }
 
 LinkedList::~LinkedList() {
