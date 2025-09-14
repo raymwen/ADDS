@@ -1,9 +1,9 @@
-#include "BigNumber.h"
+#include "BigNumCalc.h"
 #include <string>
 #include <list>
 #include <cmath>
 
-    std::list<int> BigNumber::buildBigNum(std::string numString){
+    std::list<int> BigNumCalc::buildBigNum(std::string numString){
 
         std::list<int> newList;
 
@@ -15,7 +15,7 @@
         return newList;
     }
 
-    std::list<int> BigNumber::add(std::list<int> num1, std::list<int> num2){
+    std::list<int> BigNumCalc::add(std::list<int> num1, std::list<int> num2){
 
         std::list<int> res;
 
@@ -43,7 +43,7 @@
 
     }
 
-    std::list<int> BigNumber::sub(std::list<int> num1, std::list<int> num2){
+    std::list<int> BigNumCalc::sub(std::list<int> num1, std::list<int> num2){
 
         std::list<int> res;
 
@@ -75,7 +75,7 @@
 
     }
 
-    std::list<int> BigNumber::mul(std::list<int> num1, std::list<int> num2){
+    std::list<int> BigNumCalc::mul(std::list<int> num1, std::list<int> num2){
 
         std::list<int> res;
 

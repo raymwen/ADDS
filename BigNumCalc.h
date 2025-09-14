@@ -3,11 +3,11 @@
 #include <list>
 #include <string>
 
-class BigNumber{
+class BigNumCalc{
 
-    BigNumber();
+    BigNumCalc();
 
-    ~BigNumber();
+    ~BigNumCalc();
 
     std::list<int> buildBigNum(std::string numString);
 
