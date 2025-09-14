@@ -3,6 +3,14 @@
 #include <list>
 #include <cmath>
 
+    BigNumCalc::BigNumCalc(){
+
+    }
+
+    BigNumCalc::~BigNumCalc(){
+        
+    }
+
     std::list<int> BigNumCalc::buildBigNum(std::string numString){
 
         std::list<int> newList;
