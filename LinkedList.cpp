@@ -13,7 +13,7 @@ LinkedList::LinkedList(int* array, int len){
     for(int i=len-1;i>=0;i--){
         Node* n = new Node(array[i], next);
         next = n;
-        if(i == len-1){
+        if(i == 0){
             head = n;
         }
     }
@@ -47,7 +47,7 @@ void LinkedList::printList() {
 
 Node* LinkedList::traverse(unsigned int index) {
 
-    unsigned int position = 0;
+    unsigned int position = 1;
 
     Node* currNode = head;
 
