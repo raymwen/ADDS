@@ -108,7 +108,14 @@ bool LinkedList::deletePosition(int pos) {
 
 int LinkedList::get(int pos){
 
-    return traverse(pos)->data;;
+    if(traverse(pos)!=nullptr){
+
+    return traverse(pos)->data;
+
+    }else{
+        return std::numeric_limits < int >::max();
+    }
+
 }
 
 int LinkedList::search(int target){
