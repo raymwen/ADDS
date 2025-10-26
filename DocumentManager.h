@@ -1,18 +1,18 @@
 #ifndef DOCUMENTMANAGER_H
 #define DOCUMENTMANAGER_H
 #include <string>
-#include "Document.h"
+//#include "Document.h"
 #include <vector>
 
 class DocumentManager{
 
-    private:
+    public:
 
     std::vector<Document> docs;
 
     std::vector<int> patrons;
 
-    public:
+    //public:
 
     void addDocument(std::string name, int id, int license_limit);
 
@@ -25,4 +25,25 @@ class DocumentManager{
     void returnDocument(int docid, int patronID);
 };
 
+
+class Document{
+
+    public:
+
+    int docid;
+
+    int license_limit;
+
+    std::string name;
+    
+    int active_licenses;
+
+    Document(int id, std::string nm, int limit){
+        docid = id;
+        name = nm;
+        license_limit = limit;
+        active_licenses = 0;
+    };
+
+};
 #endif
